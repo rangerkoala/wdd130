@@ -23,6 +23,19 @@ header, main, footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent2-color);
+}
+
+header img {
+    justify-self: center;
+    grid-column: 1/3;
+}
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -31,6 +44,28 @@ h1, h2 {
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
+}
+
+header nav {
+    display: flex;
+    grid-column: 3/6;
+    justify-content: space-evenly;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav a {
+    padding: 15px;
+    text-decoration: none;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+header nav a:hover {
+    background-color: #65524D;
+    color: white;
 }
 
 .socialmedia a {
@@ -53,8 +88,6 @@ h1 {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
     color: #fff;
 }
 
@@ -62,7 +95,7 @@ h1 {
     position: absolute;
     top: 290px;
     text-align: left;
-    background-color: var(--accent2-color);
+    background-color: var(--accent1-color);
     opacity: 0.9;
     color: #fff;
 }
@@ -74,4 +107,52 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 20% 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.history h2 {
+    grid-column: 1/4;
+    justify-self: center;
+    align-self: center;
+}
+
+.history p {
+    grid-auto-columns:;
+}
+
+.advenfig {
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    justify-content: space-between;
+}
+
+.advenfig figure {
+    padding: 10px;
+    text-align: center;
+}
+
+.adventure h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+}
+
+footer img {
+    max-width: 20px;
+    max-height: 20px;
+    margin: 5px;
 }
