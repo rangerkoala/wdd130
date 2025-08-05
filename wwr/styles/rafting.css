@@ -123,10 +123,6 @@ h1 {
     align-self: center;
 }
 
-.history p {
-    grid-auto-columns:;
-}
-
 .advenfig {
     display: grid;
     grid-template-columns: repeat(5 , 1fr);
