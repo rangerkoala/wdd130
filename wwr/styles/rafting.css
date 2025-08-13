@@ -295,3 +295,59 @@ button {
 button:hover {
     background-color: var(--accent1-color);
 }
+
+.subscribe {
+    background-color: var(--accent3-color);
+} 
+
+.subscribe h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.subscribe fieldset {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 20px;
+}
+
+.call {
+    position: relative;
+    text-align: center;
+    margin: 0;
+}
+
+.call a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.call h2 {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+}
+
+.purpose {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    border-style: solid;
+    border-color: var(--accent1-color);
+}
+
+
+.column3 {
+    grid-column: span 2;
+    padding: 20px;
+}
+
+.purpose img {
+    border-style: solid;
+    border-color: var(--accent2-color);
+}
